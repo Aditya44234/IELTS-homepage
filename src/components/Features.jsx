@@ -1,17 +1,9 @@
 import { useState } from "react";
 import { features } from "../data/features";
-import {
-  ArrowRight,
-  Zap,
-  Shield,
-  Users,
-  TrendingUp,
-} from "lucide-react";
+import { ArrowRight, Zap, Shield, Users, TrendingUp } from "lucide-react";
 
 export default function StunningFeaturesSection() {
   const [hoveredCard, setHoveredCard] = useState(null);
-
- 
 
   return (
     <section className="relative py-10 bg-[var(--background)] overflow-hidden">
@@ -120,18 +112,18 @@ export default function StunningFeaturesSection() {
 
         {/* Bottom CTA Section */}
         <div className="text-center mt-20">
-          <div className="inline-flex items-center space-x-8 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/50 ">
-            <div className="flex items-center space-x-2 text-[var(--primary-text)]">
+          <div className="inline-flex flex-wrap justify-center items-center space-x-4 space-y-4 sm:space-y-0 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border  max-w-4xl mx-auto">
+            <div className="flex items-center space-x-2 text-[var(--primary-text)] min-w-[140px] justify-center">
               <Users className="w-5 h-5" />
               <span className="font-medium">10k+ Active Learners</span>
             </div>
-            <div className="w-px h-6 bg-gray-300"></div>
-            <div className="flex items-center space-x-2 text-[var(--primary-text)] ">
+            <div className="hidden sm:block w-px h-6 bg-gray-300"></div>
+            <div className="flex items-center space-x-2 text-[var(--primary-text)] min-w-[140px] justify-center">
               <TrendingUp className="w-5 h-5" />
               <span className="font-medium">95% Success Rate</span>
             </div>
-            <div className="w-px h-6 bg-gray-300"></div>
-            <div className="flex items-center space-x-2 text-[var(--primary-text)]">
+            <div className="hidden sm:block w-px h-6 bg-gray-300"></div>
+            <div className="flex items-center space-x-2 text-[var(--primary-text)] min-w-[140px] justify-center">
               <Shield className="w-5 h-5" />
               <span className="font-medium">Enterprise Grade</span>
             </div>

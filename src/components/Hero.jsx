@@ -32,11 +32,11 @@ const Hero = () => {
   };
 
   return (
-    <section className="pb-9 bg-[#0B3C5D] flex justify-center items-center min-h-screen">
-      <div className="flex justify-between items-center w-full max-w-7xl px-6">
+    <section className="pt-14 pb-9 bg-[#0B3C5D] flex justify-center items-center min-h-screen px-4 sm:px-6 lg:px-12">
+      <div className="flex flex-col lg:flex-row justify-between items-center w-full max-w-7xl gap-12">
         {/* Left Content */}
         <motion.div
-          className="max-w-lg flex flex-col justify-between space-y-6 "
+          className="max-w-lg flex flex-col justify-between space-y-6 text-center lg:text-left"
           initial="hidden"
           animate="visible"
           variants={textVariants}
@@ -117,7 +117,7 @@ const Hero = () => {
 
         {/* Right Content - Hero Image */}
         <motion.div
-          className="max-w-2xl w-full  rounded-b-3xl" // larger max width
+          className="max-w-2xl w-full rounded-b-3xl"
           initial="hidden"
           animate="visible"
           variants={imageVariants}
@@ -125,7 +125,7 @@ const Hero = () => {
           <img
             src="hero2.png"
             alt="IELTS study and success"
-            className="rounded-b-3xl w-full h-100 object-cover" // full width, height 24rem (96)
+            className="rounded-b-3xl w-full h-auto object-cover"
           />
         </motion.div>
       </div>
