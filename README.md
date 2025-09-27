@@ -43,12 +43,13 @@ AceIt aims to provide personalized, AI-driven IELTS study experiences. It includ
 
 ## Folder Structure
 
+
+
+```
+
 /
 ├── public/
-│   ├── favicon.ico
-│   ├── her-3.png
-│   ├── hero.png
-│   └── hero2.png
+│   └── ...
 ├── src/
 │   ├── components/
 │   │   ├── Features.jsx
@@ -74,6 +75,7 @@ AceIt aims to provide personalized, AI-driven IELTS study experiences. It includ
 ├── README.md
 
 
+```
 ---
 
 ## Technologies
