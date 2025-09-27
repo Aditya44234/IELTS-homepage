@@ -117,7 +117,7 @@ const Hero = () => {
 
         {/* Right Content - Hero Image */}
         <motion.div
-          className="max-w-2xl w-full rounded-b-3xl"
+          className="relative max-w-2xl w-full rounded-b-3xl"
           initial="hidden"
           animate="visible"
           variants={imageVariants}
@@ -125,7 +125,22 @@ const Hero = () => {
           <img
             src="hero2.png"
             alt="IELTS study and success"
-            className="rounded-b-3xl w-full h-auto object-cover"
+            className="rounded-b-3xl w-full h-auto "
+          />
+
+          {/* Floating airplane icon */}
+          <img
+            src="book.png"
+            alt="Airplane"
+            className="absolute top-3 left-[-5px] w-18 animate-bounce-fast h-22 "
+            width={100}
+          />
+
+          <img
+            src="airplane.png"
+            alt="IELTS Icon"
+            className="absolute bottom-12 top-3 right-[-40px] w-16 h-16 animate-bounce-slow"
+            width={100}
           />
         </motion.div>
       </div>
