@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Then add this to apply globally */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+:root{
+    --background: #0B3C5D;
+    --primary-text: #22C55E;
+    --secondary-text: #D1D5DB;
+    background-color: #0B3C5D;
+
+}
